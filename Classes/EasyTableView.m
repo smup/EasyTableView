@@ -334,7 +334,7 @@
     UITableViewCell *cell = [aTableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[EasyTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-		
+		cell.backgroundColor = [UIColor clearColor];
 		[self setCell:cell boundsForOrientation:_orientation];
 		
 		cell.contentView.frame = cell.bounds;
